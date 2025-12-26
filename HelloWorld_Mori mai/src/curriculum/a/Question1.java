@@ -11,47 +11,37 @@ public class Question1 {
  */
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
- //byte型の変数byteNumを宣言する
- byte byteNum=10; //変数byteNumに10を代入
+ //各型の変数を宣言、初期値を設定し処理
+ byte bytenum=0;
+ short shortnum=0;
+ int intnum=0;
+ long longnum=0L;
+ float floatnum=0.0f;
+ double doublenum=0.0;
+ char letter='\u0000';
+ String letters=null;
+ boolean isBoolean=false;
  
- //short型の変数shortNumを宣言する
- short shortNum=100; //変数shortNumに100を代入
+ //各型の変数に指定された値を代入する
+ bytenum=10;
+ shortnum=100;
+ intnum=1000;
+ longnum=10000;
+ floatnum=9.5f;
+ doublenum=10.5;
+ letter='a';
+ letters="ハロー";
+ isBoolean=true;
  
- //int型の変数intNumを宣言する
- int intNum=1000; //変数intNumに1000を代入
- 
- //long型の変数longNumを宣言する
- long longNum=10000; //変数longNumに100000を代入
- 
- //float型の変数floatNumを宣言する
- float floatNum=9.5f; //変数floatNumに9.5fを代入
- 
- //double型の変数doublrNumを宣言する
- double doubleNum=10.5;//変数doubleNumに10.5を代入
- 
- //char型の変数letterを宣言する
- char letter='a'; //変数letterに"a"を代入
- 
- //String型の変数lettersを宣言する
- String letters="ハロー";//変数lettersに"ハロー"を代入
- 
- //boolean型の変数isBooleanを宣言する
- boolean isBoolean=true; //変数isBooleanにtrueを代入
- //11110を出力する
- 
- System.out.println(byteNum+shortNum+intNum+longNum);
- 
- System.out.println(byteNum+10);
- 
+ //値を代入した変数を用いて処理
+ System.out.println(bytenum+shortnum+intnum+longnum);
+ System.out.println(bytenum+bytenum);
  System.out.println(letter+letters+isBoolean);
+ System.out.println(bytenum+shortnum+intnum+longnum+floatnum+doublenum);
+ System.out.println(bytenum*shortnum*intnum*longnum);
+ System.out.println(doublenum/shortnum);
+ System.out.println(bytenum-shortnum);
  
- System.out.println(byteNum+shortNum+intNum+longNum+floatNum+doubleNum);
-
- System.out.println(byteNum*shortNum*intNum*longNum);
- 
- System.out.println(doubleNum/100);
- 
- System.out.println(byteNum-100);
  
  //Q04【概要】文字列変数の出力処理
  //文字列変数を使用して挨拶文を表示する
