@@ -62,7 +62,8 @@ public class Question1 {
 	//Q07【概要】整数値の加算処理
 	//scoreに20を加算し、最終スコア表示をする
 	int score = 80;
-	System.out.println("最終スコア：" + score + 20);
+	score=score+20;
+	System.out.println("最終スコア：" + score);
 
 	//Q08【概要】型変換処理
 	//【詳細】double型の値を、int型に変換し表示する
@@ -80,7 +81,7 @@ public class Question1 {
 	//【詳細】int型の数値から、String型に変換し表示する
 	int num3= 50;
 	String str = String.valueOf(num3);
-	System.out.println("得点：" + num3);
+	System.out.println("得点：" + num3+"点");
 
 	//Q11【概要】条件判断処理
 	//aがbより小さいかどうかを判断し、表示する
