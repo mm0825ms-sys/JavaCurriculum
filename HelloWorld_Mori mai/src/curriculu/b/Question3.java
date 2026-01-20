@@ -27,7 +27,7 @@ public class Question3 {
 			sum += i;
 		}
 		System.out.println(sum);
-	
+
 		// 【Q05】for文記号を使って三角形を表示する
 		for (int i = 1; i <= 5; i++) {
 			for (int j = 1; j <= i; j++) {
@@ -35,7 +35,7 @@ public class Question3 {
 			}
 			System.out.println();
 		}
-		
+
 		// 【Q06】while文で1～10の数字を表示する
 		int count = 1;
 		while (count <= 10) {
@@ -57,7 +57,7 @@ public class Question3 {
 			System.out.println(count2);
 			count2--;
 		}
-		
+
 		// 【Q09】while文で1～100の合計を表示する
 		int count3 = 1;
 		int sum1 = 0;
@@ -108,6 +108,7 @@ public class Question3 {
 				break;
 			case "テレビ":
 				System.out.println("テレビの残り台数は" + tvStock + "台です");
+				break;
 			case "ディスプレイ":
 				System.out.println("ディスプレイの残り台数は" + displayStock + "台です");
 				break;
@@ -116,7 +117,7 @@ public class Question3 {
 				System.out.println("受付不可：" + item + "は指定の商品ではありません");
 				break;
 			}
-			sc.close();
 		}
+		sc.close();
 	}
 }
