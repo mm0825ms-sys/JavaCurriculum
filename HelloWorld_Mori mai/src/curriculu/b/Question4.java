@@ -89,7 +89,7 @@ public class Question4 {
 		};
 		int sum3 = 0;
 		for (int i = 0; i < score3.length; i++) {
-			for (int j = 0; j < score3.length; j++) {
+			for (int j = 0; j < score3[i].length; j++) {
 				sum3 += score3[i][j];
 			}
 		}
@@ -104,7 +104,7 @@ public class Question4 {
 		int max2 = numbers6[0][0];
 		int min2 = numbers6[0][0];
 		for (int i = 0; i < numbers6.length; i++) {
-			for (int j = 0; j < numbers6.length; j++) {
+			for (int j = 0; j < numbers6[i].length; j++) {
 				if (numbers6[i][j] > max2) {
 					max2 = numbers6[i][j];
 				}
@@ -113,8 +113,8 @@ public class Question4 {
 				}
 			}
 		}
-		System.out.println(max);
-		System.out.println(min);
+		System.out.println(max2);
+		System.out.println(min2);
 
 		// 【Q10】3次元配列で配列のすべての要素を表示する
 		int[][][] numbers7 = {
