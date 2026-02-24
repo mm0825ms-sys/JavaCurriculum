@@ -7,9 +7,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		List<Billable> employees = new ArrayList<>();
-		employees.add(new FullTeimEmployee("田中", 8));
+		employees.add(new FullTimeEmployee("田中", 8));
 		employees.add(new ContractEmployee("佐藤", 8));
-		employees.add(new FullTeimEmployee("鈴木", 6));
+		employees.add(new FullTimeEmployee("鈴木", 6));
 
 		for (Billable b : employees) {
 			System.out.println(b.getName() + "の時給" + b.costForDay() + "円です。");
@@ -51,8 +51,8 @@ abstract class Employee implements Billable {
 	}
 }
 
-class FullTeimEmployee extends Employee {
-	public FullTeimEmployee(String name, int hours) {
+class FullTimeEmployee extends Employee {
+	public FullTimeEmployee(String name, int hours) {
 		super(name, hours);
 	}
 

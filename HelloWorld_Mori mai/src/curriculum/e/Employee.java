@@ -9,7 +9,7 @@ public class Employee {
 		this.name = name;
 	}
 
-	public void wrok() {
+	public void work() {
 		System.out.println(name + "は働いています");
 	}
 }
