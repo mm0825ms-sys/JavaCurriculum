@@ -27,7 +27,9 @@ public class Character {
 	}
 
 	public String status() {
-		return name + "(HP:" + hp + "AT:" + at + "SP:" + sp + ")";
+		return String.format("%s(HP:%d AT:%d SP%d)",name,hp,at,sp);
 	}
 
 }
+
+

@@ -1,11 +1,13 @@
 package curriculum.c;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Question6 {
 
 	public static void main(String[] args) {
-		Player player = new Player();
+		Scanner scanner = new Scanner(System.in);
+		Player player = new Player(scanner);
 		CPU cpu = new CPU();
 
 		String[] hands = { "グー", "チョキ", "パー" };
@@ -25,7 +27,7 @@ public class Question6 {
 				System.out.println("負け、もう一回！");
 			}
 		}
-
+		scanner.close();
 	}
 
 }
